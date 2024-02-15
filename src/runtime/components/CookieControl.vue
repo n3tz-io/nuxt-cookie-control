@@ -31,6 +31,7 @@
                 v-text="localeStrings?.decline"
               />
               <button
+                v-if="moduleOptions.isManageCookiesButtonEnabled"
                 @click="isModalActive = true"
                 v-text="localeStrings?.manageCookies"
               />
@@ -181,10 +182,7 @@
                   v-text="localeStrings?.acceptAll"
                 />
                 <button
-                  v-if="
-                    !moduleOptions.isModalForced ||
-                    moduleOptions.isDisableButtonEnabled
-                  "
+                  v-if="!moduleOptions.isModalForced"
                   @click="
                     () => {
                       declineAll()

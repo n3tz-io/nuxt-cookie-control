@@ -99,7 +99,7 @@ export interface ModuleOptions {
   isIframeBlocked: boolean
   isModalForced: boolean
   isCloseXButtonEnabled: boolean
-  isDisableButtonEnabled: boolean
+  isManageCookiesButtonEnabled: boolean
   privacyPolicyUrl?: string
   locales: Locale[]
   localeTexts: PartialRecord<Locale, Partial<LocaleStrings>>
@@ -155,7 +155,7 @@ export const DEFAULTS: Required<ModuleOptions> = {
   isIframeBlocked: false,
   isModalForced: false,
   isCloseXButtonEnabled: true,
-  isDisableButtonEnabled: true,
+  isManageCookiesButtonEnabled: true,
   privacyPolicyUrl: '/privacy-policy',
   locales: ['en'],
   localeTexts: { en },
