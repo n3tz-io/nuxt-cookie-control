@@ -11,7 +11,7 @@
               <slot name="bar">
                 <div
                   v-if="moduleOptions.isCloseXButtonEnabled"
-                  class="flex justify-around"
+                  class="flex justify-between"
                 >
                   <h2 v-text="localeStrings?.bannerTitle" />
                   <span class="close cursor-pointer" @click="decline()">x</span>
