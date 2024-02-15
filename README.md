@@ -6,13 +6,13 @@
 
 ![nuxt-cookie-control](https://drive.google.com/a/broj42.com/uc?id=19sFguJo7SKUvmH4xu9DhK9ZXzR6oWLX8)
 
+🚩 This is a Fork of [@dargmuesli/nuxt-cookie-control](https://gitlab.com/dargmuesli/nuxt-cookie-control) with some small tweaks like having a "X" to close button and being able to disable the "Disable" Button
+
 ✅ Translated for: ar, az, bg, ca, cs, da, de, en, es, fi, fr, hr, hu, id, it, ja, ko, lt, nl, no, oc, pt, pl, ro, rs, ru, sk, sv, tr and uk
 
 ✅ Vue 3 support
 
 ⚠️ For Nuxt 2, please use nuxt-cookie-control < 3.0.0
-
-🚩 API changes since continuing Dario Ferderber's work on [gitlab.com/broj42/nuxt-cookie-control](https://gitlab.com/broj42/nuxt-cookie-control), make sure to read the README!
 
 
 ## 🚀 Getting Started

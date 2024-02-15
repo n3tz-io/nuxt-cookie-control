@@ -9,7 +9,14 @@
           <div class="cookieControl__BarContainer">
             <div>
               <slot name="bar">
-                <h2 v-text="localeStrings?.bannerTitle" />
+                <div
+                  v-if="moduleOptions.isCloseXButtonEnabled"
+                  class="flex justify-around"
+                >
+                  <h2 v-text="localeStrings?.bannerTitle" />
+                  <span class="close cursor-pointer" @click="decline()">x</span>
+                </div>
+                <h2 v-else v-text="localeStrings?.bannerTitle" />
                 <p v-text="localeStrings?.bannerDescription" />
               </slot>
             </div>
@@ -171,7 +178,10 @@
                   v-text="localeStrings?.acceptAll"
                 />
                 <button
-                  v-if="!moduleOptions.isModalForced"
+                  v-if="
+                    !moduleOptions.isModalForced ||
+                    moduleOptions.isDisableButtonEnabled
+                  "
                   @click="
                     () => {
                       declineAll()

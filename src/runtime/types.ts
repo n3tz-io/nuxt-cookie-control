@@ -97,6 +97,8 @@ export interface ModuleOptions {
   isDashInDescriptionEnabled: boolean
   isIframeBlocked: boolean
   isModalForced: boolean
+  isCloseXButtonEnabled: boolean
+  isDisableButtonEnabled: boolean
   locales: Locale[]
   localeTexts: PartialRecord<Locale, Partial<LocaleStrings>>
 }
@@ -150,6 +152,8 @@ export const DEFAULTS: Required<ModuleOptions> = {
   isDashInDescriptionEnabled: true,
   isIframeBlocked: false,
   isModalForced: false,
+  isCloseXButtonEnabled: true,
+  isDisableButtonEnabled: true,
   locales: ['en'],
   localeTexts: { en },
 }
