@@ -69,6 +69,7 @@ export interface LocaleStrings {
   manageCookies: string
   save: string
   settingsUnsaved: string
+  learnMore: string
 }
 
 export interface ModuleOptions {
@@ -99,6 +100,7 @@ export interface ModuleOptions {
   isModalForced: boolean
   isCloseXButtonEnabled: boolean
   isDisableButtonEnabled: boolean
+  privacyPolicyUrl?: string
   locales: Locale[]
   localeTexts: PartialRecord<Locale, Partial<LocaleStrings>>
 }
@@ -154,6 +156,7 @@ export const DEFAULTS: Required<ModuleOptions> = {
   isModalForced: false,
   isCloseXButtonEnabled: true,
   isDisableButtonEnabled: true,
+  privacyPolicyUrl: '/privacy-policy',
   locales: ['en'],
   localeTexts: { en },
 }

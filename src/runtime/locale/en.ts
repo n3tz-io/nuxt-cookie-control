@@ -15,6 +15,7 @@ export default {
   here: 'here',
   iframeBlocked: 'To see this, please enable functional cookies',
   manageCookies: 'Learn more and customize',
+  learnMore: 'Learn more',
   save: 'Save',
   settingsUnsaved: 'You have unsaved settings',
 } as LocaleStrings

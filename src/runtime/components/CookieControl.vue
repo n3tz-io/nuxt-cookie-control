@@ -22,6 +22,9 @@
             </div>
             <div class="cookieControl__BarButtons">
               <button @click="accept()" v-text="localeStrings?.accept" />
+              <a :href="moduleOptions.privacyPolicyUrl">
+                <button v-text="localeStrings?.learnMore" />
+              </a>
               <button
                 v-if="moduleOptions.isAcceptNecessaryButtonEnabled"
                 @click="decline()"
