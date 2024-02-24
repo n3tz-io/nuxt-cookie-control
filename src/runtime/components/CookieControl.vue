@@ -14,9 +14,7 @@
                   class="flex justify-between"
                 >
                   <h2 v-text="localeStrings?.bannerTitle" />
-                  <span class="close cursor-pointer" @click="declineAll()"
-                    >x</span
-                  >
+                  <span class="close cursor-pointer" @click="decline()">x</span>
                 </div>
                 <h2 v-else v-text="localeStrings?.bannerTitle" />
                 <p v-text="localeStrings?.bannerDescription" />
